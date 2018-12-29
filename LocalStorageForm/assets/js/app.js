@@ -56,10 +56,10 @@ function addTweet(tweet) {
 function removeTweet(event) {
     const target = event.target;
     if(target.classList.contains("remove-tweet")) {
-        const tweetWithAnX = target.parentElement.textContent;
+        const tweetWithAnX = target.parentElement.textContent; // Contains the tweet and the "X" from the remove anchor.
         const tweet = tweetWithAnX.substring(0, tweetWithAnX.length - 1);
         target.parentElement.remove();
-        removeTweetInLocalStorage(tweet);
+        removeTweetFromLocalStorage(tweet);
         alert("The tweet has been removed.");
     }
 }
@@ -103,7 +103,7 @@ function loadTweetsFromLocalStorage() {
 /**
  * Remove the tweet identified by its value from the local storage.
  */
-function removeTweetInLocalStorage(tweet) {
+function removeTweetFromLocalStorage(tweet) {
     let tweets = getTweetsFromLocalStorage();
     tweets.splice(tweets.indexOf(tweet), 1);
     localStorage.setItem("tweets", JSON.stringify(tweets));
