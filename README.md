@@ -13,3 +13,6 @@ To remove a tweet you click on the red cross which appear next to the correspond
 
 ## Shoppingcart
 A project similar to to the first one. You fill a shopping cart with courses and can remove items or clear the shopping cart. It is also using the local storage.
+
+## Email
+A project which consists in validating a form via Javascript. There is a submit button enabled only when all the fields are valids. Also a reset button makes it easy for the user to reset te form.
