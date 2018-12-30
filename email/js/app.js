@@ -14,9 +14,8 @@ function eventListeners() {
     subject.addEventListener("blur", validateField);
     message.addEventListener("blur", validateField);
 
-    sendBtn.addEventListener("submit", submitForm);
+    form.addEventListener("submit", submitForm);
     resetBtn.addEventListener("click", resetForm);
-    console.log(resetBtn);
 }
 
 function appInit() {
@@ -36,6 +35,9 @@ function validateField() {
 
     if(email.value !== "" && subject.value !== "" && message.value !== "" && errors.length == 0) {
         sendBtn.disabled = false;
+    }
+    else {
+        sendBtn.disabled = true;    
     }
 }
 
@@ -63,8 +65,6 @@ function validateEmail(field) {
 }
 
 function submitForm(event) {
-    event.preventDefault();
-
     const loaders = document.getElementById("loaders");
 
     const spinner = document.getElementById("spinner");
@@ -85,10 +85,14 @@ function submitForm(event) {
             form.reset();
         }, 3000);
     }, 2000);
+
+    event.preventDefault();
 }
 
-function resetForm() {
+function resetForm(event) {
     if(confirm("Are you sure ? You will lost all your data.")) {
         form.reset();
+        sendBtn.disabled = true;
     }
+    event.preventDefault();
 }
