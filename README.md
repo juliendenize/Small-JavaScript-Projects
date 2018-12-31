@@ -19,3 +19,7 @@ In this project you fill an insurance form and you get a result based on the dat
 There are two scripts that I wrote:
 - `js/app.js` which works with old objects with prototypes.
 - `js/appClassesES6.js` which works with ES6 classes.
+
+### Budget
+In this project a prompt asks for your budget. Then you can add expenses and see how much money you have left.
+All the expenses are tracked.

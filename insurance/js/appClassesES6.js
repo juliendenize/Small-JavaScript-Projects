@@ -1,39 +1,3 @@
-const yearSelect = document.getElementById("year");
-const form = document.getElementById("request-quote");
-
-eventListeners();
-
-function eventListeners() {
-    document.addEventListener("DOMContentLoaded", function () {
-        HTMLUI.displayYears();
-    });
-    form.addEventListener("submit", submitQuote)
-}
-
-function submitQuote(event) {
-    event.preventDefault();
-
-    const make = document.getElementById("make").value;
-    const year = yearSelect.value;
-    const level = document.querySelector("input[name='level']:checked").value;
-
-    if(make === "" || year === "" || level === "") {
-        HTMLUI.displayError("Please fill all the fields before submitting.")
-    }
-    else { // Calculate the insurance
-        const prevResult = document.querySelector("#result div");
-
-        if(prevResult !== null) {
-            prevResult.remove();
-        }
-
-        const insurance = new Insurance(make, year, level);
-        const price = insurance.calculatePrice();
-        HTMLUI.displayResults(insurance, price);
-    }
-
-}
-
 class Insurance {
     constructor(make, year, level){
         this.make = make;
@@ -144,4 +108,40 @@ class HTMLUI {
             result.appendChild(div);
         }, 2000);       
     }
+}
+
+const yearSelect = document.getElementById("year");
+const form = document.getElementById("request-quote");
+
+eventListeners();
+
+function eventListeners() {
+    document.addEventListener("DOMContentLoaded", function () {
+        HTMLUI.displayYears();
+    });
+    form.addEventListener("submit", submitQuote)
+}
+
+function submitQuote(event) {
+    event.preventDefault();
+
+    const make = document.getElementById("make").value;
+    const year = yearSelect.value;
+    const level = document.querySelector("input[name='level']:checked").value;
+
+    if(make === "" || year === "" || level === "") {
+        HTMLUI.displayError("Please fill all the fields before submitting.")
+    }
+    else { // Calculate the insurance
+        const prevResult = document.querySelector("#result div");
+
+        if(prevResult !== null) {
+            prevResult.remove();
+        }
+
+        const insurance = new Insurance(make, year, level);
+        const price = insurance.calculatePrice();
+        HTMLUI.displayResults(insurance, price);
+    }
+
 }
