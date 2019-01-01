@@ -30,3 +30,8 @@ In this project, you can fetch an API which return names. There are 3 parameters
 There are two scripts:
 - `js/appAjax.js` which works with ajax.
 - `js/appFetch.js` which works with the Fetch API and arrow functions.
+
+### Cryptocurrencies
+Through this project, you can access to the value of different cryptocurrencies using an API.
+
+The API used is depreciated so some queries won't work because you can fetch inexistant data, so try different cryptocurrencies. Sadly, I think at some point nothing will work anymore.
