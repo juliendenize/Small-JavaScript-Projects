@@ -23,3 +23,10 @@ There are two scripts that I wrote:
 ### Budget
 In this project a prompt asks for your budget. Then you can add expenses and see how much money you have left.
 All the expenses are tracked.
+
+### NamesGenerator
+In this project, you can fetch an API which return names. There are 3 parameters: the country, the gender, the amount of names.
+
+There are two scripts:
+- `js/appAjax.js` which works with ajax.
+- `js/appFetch.js` which works with the Fetch API and arrow functions.
