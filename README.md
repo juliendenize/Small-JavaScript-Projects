@@ -47,3 +47,6 @@ If so follow these steps:
 3. **Register a new application**. for the url, provide the url you are using locally if you launch a local server.
 4. **Copy paste the Oauth token** of your new application in the constructor of `js/eventbrite.js`.
 5. Now feel free to **search for events**.
+
+### Quiz
+In this project, you answer to questions provided by the API. You have trackers of your correct and wrong answers that you can reset (otherwise these trackers are stored in the localstorage).
