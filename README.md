@@ -35,3 +35,15 @@ There are two scripts:
 Through this project, you can access to the value of different cryptocurrencies using an API.
 
 The API used is depreciated so some queries won't work because you can fetch inexistant data, so try different cryptocurrencies. Sadly, I think at some point nothing will work anymore.
+
+### Events
+In this project, you will find events by using keywords. It is using the eventbrite API with a OAuthtoken already configured in this project.
+
+It might not work for you because you might not be using the same configuration as I did and the authentification can fail.
+
+If so follow these steps:
+1. **Create an account** on https://eventbrite.com.
+2. Go to the **developper section** in your parameters.
+3. **Register a new application**. for the url, provide the url you are using locally if you launch a local server.
+4. **Copy paste the Oauth token** of your new application in the constructor of `js/eventbrite.js`.
+5. Now feel free to **search for events**.
