@@ -53,3 +53,6 @@ In this project, you answer to questions provided by the API. You have trackers 
 
 ### Cocktail
 In this project, you can fetch for different cocktails provided by an API through different pages and criterias. You can save cocktails in favorites and look at the recipes.
+
+### Lyrics
+In this project you can access to lyrics via an API. Developped with javascript modules.
