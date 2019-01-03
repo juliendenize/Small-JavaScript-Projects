@@ -50,3 +50,6 @@ If so follow these steps:
 
 ### Quiz
 In this project, you answer to questions provided by the API. You have trackers of your correct and wrong answers that you can reset (otherwise these trackers are stored in the localstorage).
+
+### Cocktail
+In this project, you can fetch for different cocktails provided by an API through different pages and criterias. You can save cocktails in favorites and look at the recipes.

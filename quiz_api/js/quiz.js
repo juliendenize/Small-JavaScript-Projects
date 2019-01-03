@@ -113,8 +113,8 @@ function saveIntoStorage() {
 }
 
 function clearStorage() {
-    localStorage.clear();
-    
+    localStorage.setItem("quiz_game_correct", "");
+    localStorage.setItem("quiz_game_incorrect", "");
     setTimeout(() => {
         window.location.reload();
     }, 200);
