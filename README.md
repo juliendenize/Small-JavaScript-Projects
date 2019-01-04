@@ -2,10 +2,10 @@
 
 In this repository I store the project I developped via the Udemy course: https://www.udemy.com/modern-javascript-the-complete-course-build-10-projects/ .
 
-### LocalStorageForm
-In this project I developped the app.js script, the other resources were given. The idea is to have one webpage where we can add and remove tweets which are displayed as a list.
+I developped the javascript files (except the materialize and boostrap ones).
 
-To add a tweet you click on the add button which doesn't submit the form and store the tweet in the local storage and display it. To remove a tweet you click on the red cross which appear next to the corresponding tweet.
+### LocalStorageForm
+The idea is to have one webpage where we can add and remove tweets which are displayed as a list. The tweets are stored in the local storage.
 
 ### Shoppingcart
 A project similar to the first one. You fill a shopping cart with courses and can remove items or clear the shopping cart. It is also using the local storage.
