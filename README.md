@@ -56,3 +56,6 @@ In this project, you can fetch for different cocktails provided by an API throug
 
 ### Lyrics
 In this project you can access to lyrics via an API. Developped with javascript modules.
+
+### IndexedDB
+In this project you can add appointments to cure your pet. They are stored in the indexedDB of your browser.
